@@ -1,0 +1,36 @@
+{
+  "name": "neno-node",
+  "version": "0.0.1",
+  "description": "This is a Node SDK for making requests with the Neno API",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/use-neno/node-sdk.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "release": "npm run build && git push && npm publish"
+  },
+  "keywords": [
+    "SMS",
+    "MTN Rwanda",
+    "Airtel Rwanda"
+  ],
+  "author": "eJobu, Inc",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "crypto": "^1.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/use-neno/node-sdk/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/use-neno/node-sdk#readme"
+}
