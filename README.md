@@ -12,18 +12,27 @@ Follow the installation guide [here](https://github.com/use-neno/node-sdk/pkgs/n
 
 Import the client from the package like this:
 
-```import Client from "@use-neno/node-sdk"```
+``` typescript
+import Client from "@use-neno/node-sdk"
+```
+
 or
-```Const Client = require("@use-neno/node-sdk")```
+
+``` typescript
+Const Client = require("@use-neno/node-sdk")
+```
 
 ### 2. Initialize the client
 
-``` const nenoClient = new Client(process.env.NENO_API_KEY) // pass in the api key from your project settings ```
+``` typescript
+const nenoClient = new Client(process.env.NENO_API_KEY) // pass in the api key from your project settings
+```
 
 ### 3. Send SMS
 
-```
-
+``` typescript
+... // your existing code
 const sendingSms = await nenoClient.sendSMS("example message", ["250788...."])
+... // your existing code
 
 ```
