@@ -1,6 +1,6 @@
 {
   "name": "@use-neno/node-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a Node SDK for making requests with the Neno API",
   "main": "dist/index.js",
   "repository": {

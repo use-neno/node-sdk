@@ -2,10 +2,8 @@ import axios from 'axios';
 import { APIEndpoints, SendSMSResponse } from './types';
 
 export class Client {
-    baseUrl:string = 'https://www.useneno.online/v1'
     apiKey: string;
-    constructor(baseUrl: string, apiKey: string){
-        this.baseUrl = baseUrl;
+    constructor( apiKey: string){
         this.apiKey = apiKey;
     }
   private async makeRequest (
@@ -13,7 +11,7 @@ export class Client {
   ) {
     try {
       const response = await axios({
-        url: `${this.baseUrl}${endpoint}`,
+        url: `https://www.useneno.online/v1${endpoint}`,
         method,
         data: body,
         headers: {
