@@ -19,7 +19,7 @@ import Client from "@use-neno/node-sdk"
 or
 
 ``` typescript
-Const Client = require("@use-neno/node-sdk")
+const Client = require("@use-neno/node-sdk")
 ```
 
 ### 2. Initialize the client
